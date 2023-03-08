@@ -7,10 +7,18 @@ import AboutToastify from "./pages/AboutToastify";
 import FakeLogin from "./pages/FakeLogin";
 
 /* Import Your Files Below This Line*/
+import { GlobalStyled } from "./components/styled/Global.styled";
+
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
   return (
     <div className="App">
+      <GlobalStyled />
+
+      <ToastContainer />
+      
       <NavBar />
 
       <Routes>
